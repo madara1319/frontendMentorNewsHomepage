@@ -1,5 +1,62 @@
+@font-face {
+  src: url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+}
+main {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mainHeader {
+  font-size: 29px;
+  font-weight: 800;
+}
 .mainGraphic {
   background-image: url("assets/images/image-web-3-mobile.jpg");
-  width: 768px;
-  height: 768px;
+  width: 344px;
+  height: 300px;
+  background-size: contain;
+}
+.readMore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 185px;
+  height: 48px;
+  background-color: hsl(5, 85%, 63%);
+  color: #fff;
+}
+.secondSectionHeader {
+  color: hsl(35, 77%, 62%);
+}
+.secondSectionBlock {
+  background-color: hsl(240, 100%, 5%);
+  color: #fff;
+}
+.secondSectionList {
+  list-style: none;
+}
+.Element {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.firstElement::before {
+  content: url("assets/images/image-retro-pcs.jpg");
+  width: 100px;
+  height: 128px;
+}
+.firstElement::marker {
+  font-size: 23px;
+  font-weight: 800;
+}
+.secondElement::before {
+  content: url("assets/images/image-top-laptops.jpg");
+  width: 100px;
+  height: 128px;
+}
+.thirdElement::before {
+  content: url("assets/images/image-gaming-growth.jpg");
+  width: 100px;
+  height: 128px;
 }
