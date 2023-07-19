@@ -1,6 +1,9 @@
 @font-face {
   src: url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
 }
+body {
+  font-size: 15px;
+}
 main {
   font-family: "Inter", sans-serif;
   display: flex;
@@ -42,21 +45,42 @@ main {
   grid-template-rows: repeat(2, 1fr);
 }
 .firstElement::before {
-  content: url("assets/images/image-retro-pcs.jpg");
+  /* content: url("assets/images/image-retro-pcs.jpg"); */
+  background-image: url("assets/images/image-retro-pcs.jpg");
+  background-size: 100px 128px;
+  display: inline-block;
   width: 100px;
   height: 128px;
+  content: "";
 }
 .firstElement::marker {
   font-size: 23px;
   font-weight: 800;
 }
 .secondElement::before {
-  content: url("assets/images/image-top-laptops.jpg");
+  /* content: url("assets/images/image-top-laptops.jpg"); */
+  background-image: url("assets/images/image-top-laptops.jpg");
+  background-size: 100px 128px;
+  display: inline-block;
   width: 100px;
   height: 128px;
+  content: "";
 }
 .thirdElement::before {
-  content: url("assets/images/image-gaming-growth.jpg");
+  /* content: url("assets/images/image-gaming-growth.jpg"); */
+  background-image: url("assets/images/image-gaming-growth.jpg");
+  background-size: 100px 128px;
+  display: inline-block;
   width: 100px;
   height: 128px;
+  content: "";
+}
+.ElementHeader {
+  color: hsl(240, 100%, 5%);
+  font-weight: 800;
+}
+
+.listArticle {
+  grid-column: 2;
+  color: hsl(236, 13%, 42%);
 }
