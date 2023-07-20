@@ -19,6 +19,9 @@ main {
   width: 344px;
   height: 300px;
   background-size: contain;
+  @media (min-width: 375px) {
+    display: flex;
+  }
 }
 .readMore {
   display: flex;
@@ -83,4 +86,10 @@ main {
 .listArticle {
   grid-column: 2;
   color: hsl(236, 13%, 42%);
+}
+.navigation {
+  display: none;
+  @media (min-width: 375px) {
+    display: inline;
+  }
 }
