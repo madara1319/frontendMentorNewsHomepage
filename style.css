@@ -20,7 +20,7 @@ main {
   height: 300px;
   background-size: contain;
   @media (min-width: 375px) {
-    display: flex;
+    display: grid;
   }
 }
 .readMore {
