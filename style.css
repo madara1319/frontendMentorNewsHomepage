@@ -13,6 +13,7 @@ main {
 .mainHeader {
   font-size: 29px;
   font-weight: 800;
+  width: 278px;
 }
 .mainGraphic {
   background-image: url("assets/images/image-web-3-mobile.jpg");
@@ -21,7 +22,13 @@ main {
   background-size: contain;
   @media (min-width: 375px) {
     display: grid;
+    height: 100px;
   }
+}
+.firstSectionParagraph {
+  margin: 0;
+  display: flex;
+  width: 93%;
 }
 .readMore {
   display: flex;
@@ -31,6 +38,10 @@ main {
   height: 48px;
   background-color: hsl(5, 85%, 63%);
   color: #fff;
+}
+.secondSectionBlock {
+  width: 358px;
+  margin: 0 16px;
 }
 .secondSectionHeader {
   color: hsl(35, 77%, 62%);
@@ -44,8 +55,12 @@ main {
 }
 .Element {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-columns: repeat(2, 1fr); */
+  grid-template-columns: (1fr, 2fr);
+  /* grid-template-rows: repeat(2, 1fr); */
   grid-template-rows: repeat(2, 1fr);
+  padding-bottom: 35px;
+  column-gap: 25px;
 }
 .firstElement::before {
   /* content: url("assets/images/image-retro-pcs.jpg"); */
@@ -55,10 +70,16 @@ main {
   width: 100px;
   height: 128px;
   content: "";
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
 .firstElement::marker {
   font-size: 23px;
   font-weight: 800;
+  content: "✝ ";
+  font-size: 1.2em;
 }
 .secondElement::before {
   /* content: url("assets/images/image-top-laptops.jpg"); */
@@ -68,6 +89,11 @@ main {
   width: 100px;
   height: 128px;
   content: "";
+
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
 .thirdElement::before {
   /* content: url("assets/images/image-gaming-growth.jpg"); */
@@ -77,6 +103,11 @@ main {
   width: 100px;
   height: 128px;
   content: "";
+
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
 .ElementHeader {
   color: hsl(240, 100%, 5%);
@@ -92,4 +123,7 @@ main {
   @media (min-width: 375px) {
     display: inline;
   }
+}
+.thirdSection {
+  padding-bottom: 55px;
 }
