@@ -3,6 +3,7 @@
 }
 body {
   font-size: 15px;
+  margin: 0;
 }
 main {
   font-family: "Inter", sans-serif;
@@ -20,7 +21,7 @@ main {
   width: 344px;
   height: 300px;
   background-size: contain;
-  @media (min-width: 375px) {
+  @media (min-width: 376px) {
     display: grid;
     height: 100px;
   }
@@ -40,18 +41,28 @@ main {
   color: #fff;
 }
 .secondSectionBlock {
-  width: 358px;
+  width: 91.5%;
   margin: 0 16px;
+  background-color: hsl(240, 100%, 5%);
+  color: #fff;
 }
 .secondSectionHeader {
   color: hsl(35, 77%, 62%);
 }
-.secondSectionBlock {
-  background-color: hsl(240, 100%, 5%);
-  color: #fff;
-}
+
 .secondSectionList {
   list-style: none;
+  padding: 0;
+}
+.Item {
+  border: 0;
+  border-bottom-width: 0.15px;
+  border-bottom-style: solid;
+  padding: 0 32px 0 22px;
+}
+.thirdItem {
+  border: 0;
+  padding-bottom: 32px;
 }
 .Element {
   display: grid;
@@ -120,7 +131,7 @@ main {
 }
 .navigation {
   display: none;
-  @media (min-width: 375px) {
+  @media (min-width: 376px) {
     display: inline-block;
   }
 }
