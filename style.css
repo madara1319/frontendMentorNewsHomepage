@@ -88,6 +88,7 @@ main {
 .thirdSectionList {
   list-style-type: "\1F44D";
   list-style-position: inside;
+  display: grid;
 }
 ol {
   list-style-type: "\1F44D";
@@ -97,7 +98,7 @@ ol {
   border: 0;
   padding-bottom: 32px;
 }
-.Element {
+.ElementContainer {
   display: grid;
   /* grid-template-columns: repeat(2, 1fr); */
   grid-template-columns: (1fr, 2fr);
@@ -119,7 +120,7 @@ ol {
   grid-row-start: 1;
   grid-row-end: 3;
 }
-.Element::marker {
+.ElementContainer::marker {
   font-weight: 800;
   content: "✝ ";
   font-size: 200px;
@@ -180,4 +181,60 @@ ol {
 }
 .thirdSection {
   padding-bottom: 55px;
+}
+
+/*-----------------------------------------*/
+.item::marker {
+  font-weight: 800;
+  content: "✝ ";
+  font-size: 200px;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.item {
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: (1fr, 2fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  padding-bottom: 35px;
+  column-gap: 25px; */
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: (1fr, 2fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  padding-bottom: 35px;
+  column-gap: 25px;
+}
+.containerSrejner {
+  height: 400px;
+  width: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  grid-template-areas:
+    "head head head"
+    "  .  side  ."
+    "foot foot foot";
+}
+
+.grid-1 {
+  display: grid;
+  grid-area: head;
+  background-color: pink;
+}
+.grid-2 {
+  display: grid;
+  grid-area: side;
+  background-color: blue;
+}
+.grid-3 {
+  display: grid;
+  grid-area: foot;
+  background-color: green;
 }
