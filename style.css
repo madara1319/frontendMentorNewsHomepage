@@ -211,30 +211,3 @@ ol {
   padding-bottom: 35px;
   column-gap: 25px;
 }
-.containerSrejner {
-  height: 400px;
-  width: 400px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10px;
-  grid-template-areas:
-    "head head head"
-    "  .  side  ."
-    "foot foot foot";
-}
-
-.grid-1 {
-  display: grid;
-  grid-area: head;
-  background-color: pink;
-}
-.grid-2 {
-  display: grid;
-  grid-area: side;
-  background-color: blue;
-}
-.grid-3 {
-  display: grid;
-  grid-area: foot;
-  background-color: green;
-}
