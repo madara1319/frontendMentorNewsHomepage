@@ -86,19 +86,40 @@ main {
   display: flex;
 }
 .thirdSectionList {
-  list-style-type: "\1F44D";
   list-style-position: inside;
   display: grid;
+  grid-template-columns: (1fr, 2fr);
+  grid-template-rows: repeat(3, 1fr);
 }
-ol {
-  list-style-type: "\1F44D";
-  list-style-position: inside;
-}
+
 .thirdItem {
   border: 0;
   padding-bottom: 32px;
 }
+.firstElement {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.secondElement {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.thirdElement {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
 .ElementContainer {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
   display: grid;
   /* grid-template-columns: repeat(2, 1fr); */
   grid-template-columns: (1fr, 2fr);
@@ -118,16 +139,16 @@ ol {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
-  grid-row-end: 3;
+  grid-row-end: 2;
 }
-.ElementContainer::marker {
+.Element::marker {
+  display: flex;
   font-weight: 800;
-  content: "✝ ";
-  font-size: 200px;
+  font-size: 24px;
   grid-column-start: 2;
   grid-column-end: 2;
   grid-row-start: 1;
-  grid-row-end: 2;
+  grid-row-end: 1;
 }
 .secondElement::before {
   /* content: url("assets/images/image-top-laptops.jpg"); */
@@ -161,6 +182,10 @@ ol {
   color: hsl(240, 100%, 5%);
   font-weight: 800;
   font-size: 14px;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
 }
 
 .listArticle {
@@ -181,33 +206,4 @@ ol {
 }
 .thirdSection {
   padding-bottom: 55px;
-}
-
-/*-----------------------------------------*/
-.item::marker {
-  font-weight: 800;
-  content: "✝ ";
-  font-size: 200px;
-  grid-column-start: 2;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
-}
-.item {
-  /* display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-columns: (1fr, 2fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  padding-bottom: 35px;
-  column-gap: 25px; */
-}
-.container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-columns: (1fr, 2fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  padding-bottom: 35px;
-  column-gap: 25px;
 }
