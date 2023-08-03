@@ -148,6 +148,7 @@ main {
 .ElementNumber {
   display: flex;
   color: hsl(236, 13%, 42%);
+  color: hsl(233, 8%, 79%);
   font-weight: 800;
   font-size: 24px;
   grid-column-start: 2;
