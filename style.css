@@ -81,6 +81,10 @@ main {
   border-bottom-width: 0.15px;
   border-bottom-style: solid;
   padding: 0 32px 0 22px;
+  color: hsl(233, 8%, 79%);
+}
+.Itemheader {
+  color: hsl(36, 100%, 99%);
 }
 .Element {
   display: grid;
@@ -147,10 +151,9 @@ main {
 }
 .ElementNumber {
   display: flex;
-  color: hsl(236, 13%, 42%);
   color: hsl(233, 8%, 79%);
-  font-weight: 800;
-  font-size: 24px;
+  font-weight: 600;
+  font-size: 30px;
   grid-column-start: 2;
   grid-column-end: 2;
   grid-row-start: 1;
