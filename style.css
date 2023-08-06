@@ -2,7 +2,7 @@
   src: url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
 }
 * {
-  outline: 1px solid red;
+  outline: 1px solid magenta;
 }
 html {
   margin: 0;
