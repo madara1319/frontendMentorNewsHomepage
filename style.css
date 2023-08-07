@@ -2,7 +2,7 @@
   src: url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
 }
 * {
-  outline: 1px solid magenta;
+  /* outline: 1px solid magenta; */
 }
 html {
   margin: 0;
@@ -16,6 +16,34 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.navigation {
+  display: none;
+  @media (min-width: 376px) {
+    display: inline-block;
+  }
+}
+.burger {
+  position: absolute;
+  display: block;
+  background-image: url(/assets/images/icon-menu.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 17px;
+  right: 16px;
+  top: 34px;
+}
+.logo {
+  position: absolute;
+  display: block;
+  background-image: url(/assets/images/logo.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 45px;
+  height: 28px;
+  left: 16px;
+  top: 28px;
 }
 .mainHeader {
   font-size: 29px;
@@ -62,7 +90,7 @@ main {
   color: #fff;
 }
 .secondSectionHeader {
-  font-size: 50px;
+  font-size: 40px;
   margin: 0;
   color: hsl(35, 77%, 62%);
   padding: 30px 0 0 23px;
@@ -80,7 +108,7 @@ main {
   border: 0;
   border-bottom-width: 0.15px;
   border-bottom-style: solid;
-  padding: 0 32px 0 22px;
+  padding: 0 32px 37px 22px;
   color: hsl(233, 8%, 79%);
 }
 .Itemheader {
@@ -207,12 +235,7 @@ main {
   font-size: 13px;
   line-height: 26px;
 }
-.navigation {
-  display: none;
-  @media (min-width: 376px) {
-    display: inline-block;
-  }
-}
+
 .thirdSection {
   padding-bottom: 55px;
 }
