@@ -163,6 +163,7 @@ main {
   grid-template-rows: repeat(3, 1fr);
   padding-bottom: 35px;
   column-gap: 25px;
+  height: 128px;
 }
 .firstElementPicture {
   /* content: url("assets/images/image-retro-pcs.jpg"); */
