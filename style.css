@@ -23,10 +23,26 @@ main {
     display: inline-block;
   }
 }
-.burger {
+.navigation--open {
+  display: inline-block;
+}
+
+.button--open {
   position: absolute;
   display: block;
   background-image: url(/assets/images/icon-menu.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 17px;
+  right: 16px;
+  top: 34px;
+}
+
+.button--closed {
+  position: absolute;
+  display: block;
+  background-image: url(/assets/images/icon-menu-close.svg);
   background-size: contain;
   background-repeat: no-repeat;
   width: 40px;
