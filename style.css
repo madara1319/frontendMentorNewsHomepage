@@ -24,7 +24,19 @@ main {
   }
 }
 .navigation--open {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  position: absolute;
+  height: 100%;
+  z-index: 9;
+  background-color: hsl(36, 100%, 99%);
+}
+
+.burger {
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 .button--open {

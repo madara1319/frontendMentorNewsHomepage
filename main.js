@@ -3,11 +3,9 @@ const burgerMenuButton = document.querySelector(".burger");
 
 function burgerMenuToggle() {
   if (navigationBar.classList.contains("navigation--open")) {
-    navigationBar.classList.add("button--closed");
-    navigationBar.classList.remove("button--open");
+    burgerMenuButton.classList.add("button--closed");
   } else {
-    navigationBar.classList.add("button--open");
-    navigationBar.classList.remove("button--closed");
+    burgerMenuButton.classList.remove("button--closed");
   }
 }
 
