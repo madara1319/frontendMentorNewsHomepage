@@ -16,8 +16,8 @@ burgerMenuButton = document.addEventListener("click", () => {
   }
 });
 
-burgerMenuButton = document.addEventListener("resize", () => {
+navigationBar = document.addEventListener("resize", () => {
   if (window.innerWidth < 768) {
     navigationBar.classList.add("navigation--open");
-  }
+  } else navigationBar.classList.remove("navigation--open");
 });
