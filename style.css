@@ -7,19 +7,29 @@
 html {
   margin: 0;
   height: 100%;
-  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 body {
   font-size: 15px;
   margin: 0;
   height: 100%;
-  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 main {
   font-family: "Inter", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.header {
+  height: 88px;
+  width: 100%;
+  display: flex;
+  background-color: hsl(36, 100%, 99%);
+  position: fixed;
 }
 .navigation {
   display: none;
@@ -36,8 +46,8 @@ main {
   height: auto;
   z-index: 9;
   right: 0;
-  width: 69%;
-  font-size: 24px;
+  width: 65%;
+  font-size: 20px;
   text-align: start;
   line-height: 48px;
   background-color: hsl(36, 100%, 99%);
@@ -47,6 +57,7 @@ main {
 
 .navLink {
   text-decoration: none;
+  color: hsl(240, 100%, 5%);
 }
 
 .burger {

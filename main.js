@@ -1,3 +1,9 @@
+var docWidth = document.documentElement.offsetWidth;
+[].forEach.call(document.querySelectorAll("*"), function (el) {
+  if (el.offsetWidth > docWidth) {
+    console.log(el);
+  }
+});
 const navigationBar = document.querySelector(".navigation");
 const burgerMenuButton = document.querySelector(".burger");
 
@@ -9,14 +15,14 @@ function burgerMenuToggle() {
   }
 }
 
-burgerMenuButton = document.addEventListener("click", () => {
+burgerMenuButton.addEventListener("click", () => {
   if (window.innerWidth < 768) {
     navigationBar.classList.toggle("navigation--open");
     burgerMenuToggle();
   }
 });
 
-navigationBar = document.addEventListener("resize", () => {
+navigationBar.addEventListener("resize", () => {
   if (window.innerWidth < 768) {
     navigationBar.classList.add("navigation--open");
   } else navigationBar.classList.remove("navigation--open");
