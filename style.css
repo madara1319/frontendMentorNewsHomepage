@@ -22,6 +22,11 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (min-width: 786px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
 }
 
 .header {
@@ -117,6 +122,12 @@ main {
   @media (min-width: 376px) {
     display: grid;
     height: 100px;
+  }
+  @media (min-width: 786px) {
+    background-image: url("assets/images/image-web-3-desktop.jpg");
+
+    max-width: 608px;
+    height: 250px;
   }
 }
 .firstSectionParagraph {
