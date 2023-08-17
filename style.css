@@ -130,6 +130,14 @@ main {
     height: 250px;
   }
 }
+.firstSection {
+  @media (min-width: 768px) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+}
 .firstSectionParagraph {
   margin: 0;
   display: flex;
