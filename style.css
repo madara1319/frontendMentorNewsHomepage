@@ -35,6 +35,11 @@ main {
   display: flex;
   background-color: hsl(36, 100%, 99%);
   position: fixed;
+  @media (min-width: 768px) {
+    position: absolute;
+    top: 0px;
+    background-color: none;
+  }
 }
 .navigation {
   display: none;
@@ -58,6 +63,9 @@ main {
   background-color: hsl(36, 100%, 99%);
   text-decoration: none;
   padding: 150px 0 0 25px;
+  @media (min-width: 768px) {
+    position: ;
+  }
 }
 
 .navLink {
@@ -210,6 +218,12 @@ main {
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
+  @media (min-width: 768px) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
 }
 
 .secondElement {
@@ -217,12 +231,24 @@ main {
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 3;
+  @media (min-width: 768px) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
 }
 .thirdElement {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 3;
   grid-row-end: 4;
+  @media (min-width: 768px) {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
 }
 .ElementContainer {
   grid-column-start: 2;
