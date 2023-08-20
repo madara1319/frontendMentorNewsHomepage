@@ -117,6 +117,10 @@ main {
   font-weight: 800;
   width: 278px;
   margin-left: 18px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
 }
 
 .mainGraphic {
@@ -136,14 +140,20 @@ main {
 
     max-width: 608px;
     height: 250px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
   }
 }
 .firstSection {
   @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
   }
 }
 .firstSectionParagraph {
@@ -163,6 +173,8 @@ main {
   background-color: hsl(5, 85%, 63%);
   color: #fff;
   margin-bottom: 76px;
+  grid-column-start: 2;
+  grid-column-end: 3;
 }
 .secondSectionBlock {
   width: 91.5%;
@@ -203,8 +215,8 @@ main {
   display: flex;
   grid-column-start: 1;
   grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
 }
 .thirdSectionList {
   list-style-position: inside;
