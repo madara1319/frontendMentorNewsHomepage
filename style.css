@@ -137,13 +137,16 @@ main {
   }
   @media (min-width: 786px) {
     background-image: url("assets/images/image-web-3-desktop.jpg");
-
-    max-width: 608px;
-    height: 250px;
+    display: flex;
+    max-width: 729px;
+    height: 300px;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
+    margin-left: 165px;
+    margin-top: 184px;
+    text-align: top;
   }
 }
 .firstSection {
@@ -175,6 +178,13 @@ main {
   margin-bottom: 76px;
   grid-column-start: 2;
   grid-column-end: 3;
+}
+.secondSection {
+  @media (min-width: 786px) {
+    margin-right: 165px;
+    width: 352px;
+    margin-top: 184px;
+  }
 }
 .secondSectionBlock {
   width: 91.5%;
