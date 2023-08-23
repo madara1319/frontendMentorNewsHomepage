@@ -25,7 +25,8 @@ main {
   @media (min-width: 786px) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: 486px 274px 260px;
   }
 }
 
@@ -121,6 +122,10 @@ main {
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
+  @media (min-width: 786px) {
+    font-size: 40px;
+    margin-left: 166px;
+  }
 }
 
 .mainGraphic {
@@ -229,6 +234,7 @@ main {
   grid-row-end: 4;
 }
 .thirdSectionList {
+  width: 100%;
   list-style-position: inside;
   display: grid;
   grid-template-columns: (1fr);
@@ -289,6 +295,10 @@ main {
   padding-bottom: 35px;
   column-gap: 25px;
   height: 128px;
+  @media (min-width: 786px) {
+    width: 210px;
+    margin-right: 50px;
+  }
 }
 .firstElementPicture {
   /* content: url("assets/images/image-retro-pcs.jpg"); */
@@ -349,6 +359,9 @@ main {
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 2;
+  @media (min-width: 786px) {
+    width: 100%;
+  }
 }
 
 .listArticle {
@@ -360,6 +373,9 @@ main {
   padding-right: 32px;
   font-size: 13px;
   line-height: 26px;
+  @media (min-width: 786px) {
+    width: 100%;
+  }
 }
 
 .thirdSection {
