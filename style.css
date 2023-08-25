@@ -124,7 +124,7 @@ main {
   @media (min-width: 786px) {
     font-size: 40px;
     margin-left: 166px;
-    margin-top:16px;
+    margin-top:64px;
     background-color:magenta;
   }
 }
@@ -171,6 +171,10 @@ main {
   width: 93%;
   color: hsl(236, 13%, 42%);
   margin-left: 16px;
+  @media(min-width:786px)
+  {
+    margin-top:64px;
+  }
 }
 .readMore {
   display: flex;
