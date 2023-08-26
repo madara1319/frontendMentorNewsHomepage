@@ -151,7 +151,7 @@ main {
     grid-row-start: 1;
     grid-row-end: 2;
     margin-left: 165px;
-    margin-top: 184px;
+    margin-top: 0px;
     text-align: top;
   }
 }
