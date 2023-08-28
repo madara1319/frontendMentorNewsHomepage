@@ -127,6 +127,8 @@ main {
     margin-left: 166px;
     margin-top:64px;
     background-color:magenta;
+    grid-row-start:1;
+    grid-row-end:3;
   }
 }
 
@@ -159,11 +161,13 @@ main {
 .firstSection {
   @media (min-width: 768px) {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows:repeat(2,1fr);
   }
 }
 .firstSectionParagraph {
@@ -174,7 +178,11 @@ main {
   margin-left: 16px;
   @media(min-width:786px)
   {
+    display:block;
     margin-top:64px;
+    height:auto;
+    grid-row-start:1;
+    grid-column-start:2;
   }
 }
 .readMore {
@@ -189,6 +197,11 @@ main {
   margin-bottom: 76px;
   grid-column-start: 2;
   grid-column-end: 3;
+  @media(min-width:786px)
+  {
+    grid-row-start:2;
+
+  }
 }
 .secondSection {
   @media (min-width: 786px) {
@@ -248,6 +261,7 @@ main {
   @media(min-width: 786px)
   {
     margin-left:125px;
+    margin-right:165px;
   }
 }
 
