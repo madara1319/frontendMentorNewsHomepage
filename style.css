@@ -24,8 +24,10 @@ main {
   @media (min-width: 786px) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-rows: 486px 274px 260px;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: 511px 1fr ;
+     grid-template-rows: 286px 274px 260px;
+
   }
 }
 
@@ -251,6 +253,14 @@ main {
   grid-column-end: 4;
   grid-row-start: 3;
   grid-row-end: 4;
+  @media(min-width:786px)
+  {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+
+  }
 }
 .thirdSectionList {
   width: 100%;
@@ -260,6 +270,7 @@ main {
   grid-template-rows: repeat(3, 1fr);
   @media(min-width: 786px)
   {
+    grid-template-rows:1fr;
     margin-left:125px;
     margin-right:165px;
   }
@@ -274,11 +285,11 @@ main {
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
-  @media (min-width: 768px) {
+  @media (min-width: 786px) {
     grid-column-start: 1;
     grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
   }
 }
 
@@ -287,11 +298,11 @@ main {
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 3;
-  @media (min-width: 768px) {
+  @media (min-width: 786px) {
     grid-column-start: 2;
     grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
   }
 }
 .thirdElement {
@@ -299,11 +310,11 @@ main {
   grid-column-end: 2;
   grid-row-start: 3;
   grid-row-end: 4;
-  @media (min-width: 768px) {
+  @media (min-width: 786px) {
     grid-column-start: 3;
     grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
   }
 }
 .ElementContainer {
