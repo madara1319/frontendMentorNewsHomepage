@@ -38,6 +38,7 @@ main {
   background-color: hsl(36, 100%, 99%);
   position: fixed;
   @media (min-width: 768px) {
+
     position: absolute;
     top: 0px;
     opacity:1;
@@ -52,6 +53,7 @@ main {
 .navigation {
   display: none;
   @media (min-width: 768px) {
+    margin-left:58%;
     display: flex;
     width:437px;
     text-align:right;
