@@ -60,6 +60,7 @@ main {
     flex-direction:row;
     justify-content:space-evenly;
     justify-items:center;
+    margin-top:89px;
   }
 }
 .navigation--open {
@@ -126,6 +127,12 @@ main {
   height: 28px;
   left: 16px;
   top: 28px;
+  @media(min-width:786px)
+  {
+    position:absolute;
+    margin-left:164px;
+    margin-top:61px;
+  }
 }
 .mainHeader {
   font-size: 29px;
