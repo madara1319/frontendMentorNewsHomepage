@@ -22,11 +22,12 @@ main {
   flex-direction: column;
   align-items: center;
   @media (min-width: 786px) {
+    width:100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-rows: 511px 1fr ;
+    grid-template-columns: repeat(3, minmax(0,1fr));
      grid-template-rows: 183px 300px 274px 260px;
+     /* justify-items:end; */
+     align-items:start;
 
   }
 }
@@ -145,7 +146,7 @@ main {
   grid-row-end: 2;
   @media (min-width: 786px) {
     font-size: 40px;
-    margin-left: 166px;
+    margin-left: 165px;
     margin-top:20px;
     /* background-color:magenta; */
     grid-row-start:1;
@@ -176,11 +177,10 @@ main {
     grid-row-end: 3;
     margin-left: 165px;
     margin-top: 0px;
-    text-align: top;
   }
 }
 .firstSection {
-  @media (min-width: 768px) {
+  @media (min-width: 786px) {
     display: grid;
 
     grid-template-columns: repeat(2, 1fr);
@@ -200,6 +200,7 @@ main {
   margin-left: 16px;
   @media(min-width:786px)
   {
+    margin:0;
     display:block;
     margin-top:20px;
     height:auto;
@@ -221,6 +222,7 @@ main {
   grid-column-end: 3;
   @media(min-width:786px)
   {
+    margin:0;
     grid-row-start:2;
 
   }
@@ -228,16 +230,20 @@ main {
 .secondSection {
   @media (min-width: 786px) {
     grid-row-start:2;
-    margin-right: 165px;
+    grid-row-end:4;
+    /* margin-right: 165px; */
     width: 352px;
-    margin-top: 209px;
+    /* margin-top: 213px; */
+    grid-column-start:3;
   }
 }
 .secondSectionBlock {
-  width: 91.5%;
-  margin: 0 16px;
+  /* width: 91.5%; */
+  margin: 0;
+  height: 475px;
   background-color: hsl(240, 100%, 5%);
   color: #fff;
+  padding:0 24px 0px 24px;
 }
 .secondSectionHeader {
   font-size: 40px;
@@ -258,7 +264,7 @@ main {
   border: 0;
   border-bottom-width: 0.15px;
   border-bottom-style: solid;
-  padding: 0 32px 37px 22px;
+  /* padding: 0 32px 37px 22px; */
   color: hsl(233, 8%, 79%);
 }
 .Itemheader {
@@ -266,7 +272,7 @@ main {
 }
 .Element {
   display: grid;
-  grid-template-columns: (1fr, 2fr);
+  grid-template-columns: repeat(1fr, 2fr);
 }
 .thirdSection {
   display: flex;
@@ -291,9 +297,12 @@ main {
   grid-template-rows: repeat(3, 1fr);
   @media(min-width: 786px)
   {
+    width: 100%;
+    grid-template-columns: repeat(3, minmax(0,1fr));
     grid-template-rows:1fr;
-    margin-left:125px;
-    margin-right:165px;
+    padding:0;
+    /* margin-left:125px;
+    margin-right:165px; */
   }
 }
 
@@ -311,6 +320,7 @@ main {
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 1;
+    margin-left:165px;
   }
 }
 
