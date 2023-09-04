@@ -146,7 +146,7 @@ main {
   grid-row-start: 1;
   grid-row-end: 2;
   @media (min-width: 786px) {
-    font-size: 40px;
+    font-size: 45px;
     margin-left: 165px;
     margin-top:20px;
     /* background-color:magenta; */
