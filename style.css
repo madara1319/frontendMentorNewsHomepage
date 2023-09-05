@@ -62,7 +62,7 @@ main {
     justify-content:space-evenly;
     justify-items:center;
     margin-top:89px;
-    color: hsl(236, 13%, 42%);
+  color: hsl(233, 8%, 79%);
   }
 }
 .navigation--open {
@@ -88,7 +88,7 @@ main {
 
 .navLink {
   text-decoration: none;
-  color: hsl(240, 100%, 5%);
+    color: hsl(236, 13%, 42%);
 }
 
 .burger {
