@@ -22,7 +22,8 @@ main {
   flex-direction: column;
   align-items: center;
   @media (min-width: 786px) {
-    width:100%;
+    /* width:100%; */
+    margin:0 150px 0 150px;
     display: grid;
     grid-template-columns: repeat(3, minmax(0,1fr));
      grid-template-rows: 183px 300px 274px 260px;
@@ -34,7 +35,7 @@ main {
 
 .header {
   height: 88px;
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   background-color: hsl(36, 100%, 99%);
   position: fixed;
@@ -53,7 +54,7 @@ main {
 }
 .navigation {
   display: none;
-  @media (min-width: 768px) {
+  @media (min-width: 786px) {
     margin-left:58%;
     display: flex;
     width:437px;
@@ -147,7 +148,7 @@ main {
   grid-row-end: 2;
   @media (min-width: 786px) {
     font-size: 45px;
-    margin-left: 165px;
+    /* margin-left: 165px; */
     margin-top:20px;
     /* background-color:magenta; */
     grid-row-start:1;
@@ -176,7 +177,7 @@ main {
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
-    margin-left: 165px;
+    /* margin-left: 165px; */
     margin-top: 0px;
   }
 }
@@ -325,7 +326,7 @@ main {
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 1;
-    margin-left:165px;
+    /* margin-left:165px; */
   }
 }
 
