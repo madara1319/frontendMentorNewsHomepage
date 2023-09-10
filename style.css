@@ -227,6 +227,7 @@ main {
   margin-bottom: 76px;
   grid-column-start: 2;
   grid-column-end: 3;
+  letter-spacing: 5px;
   @media(min-width:786px)
   {
     margin:0;
