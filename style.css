@@ -239,6 +239,10 @@ main {
 
   }
 }
+.readMore:hover
+{
+  background-color: hsl(240, 100%, 5%);
+}
 .secondSection {
   @media (min-width: 786px) {
     grid-row-start:2;
@@ -282,6 +286,10 @@ main {
 }
 .Itemheader {
   color: hsl(36, 100%, 99%);
+}
+.Itemheader:hover
+{
+  color:hsl(35, 77%, 62%);
 }
 .Element {
   display: grid;
@@ -446,6 +454,11 @@ main {
   @media (min-width: 786px) {
     width: 100%;
   }
+}
+.ElementHeader:hover
+{
+  color:hsl(5, 85%, 63%);
+
 }
 
 .listArticle {
