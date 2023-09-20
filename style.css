@@ -131,20 +131,23 @@ grid-column:-1;
   top: 27px;
 }
 .logo {
-  position: absolute;
+  /* position: absolute; */
   display: block;
   background-image: url(/assets/images/logo.svg);
-  background-size: contain;
+  /* background-size: contain; */
   background-repeat: no-repeat;
-  width: 45px;
-  height: 28px;
+  width: 100px;
+  height: 100px;
   left: 16px;
   top: 28px;
+  object-fit: contain;
+  grid-column-start: 1;
+  background-position:left ;
   @media(min-width:786px)
   {
-    position:absolute;
-    margin-left:164px;
-    margin-top:61px;
+    /* position:absolute; */
+    /* margin-left:164px; */
+    /* margin-top:61px; */
   }
 }
 .mainHeader {
