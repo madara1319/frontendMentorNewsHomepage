@@ -180,6 +180,7 @@ grid-column:-1;
   @media (min-width: 376px) {
     display: grid;
     height: 300px;
+    max-width:729px;
   }
   @media (min-width: 1400px) {
     background-image: url("assets/images/image-web-3-desktop.jpg");
