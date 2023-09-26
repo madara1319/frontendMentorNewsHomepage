@@ -179,6 +179,7 @@ grid-column:-1;
   margin-top: 88px;
   @media (min-width: 376px) {
     display: grid;
+    background-image: url("assets/images/image-web-3-desktop.jpg");
     height: 300px;
     max-width:729px;
   }
