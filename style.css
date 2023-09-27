@@ -177,13 +177,14 @@ grid-column:-1;
   background-size: contain;
   background-repeat: no-repeat;
   margin-top: 88px;
-  @media (min-width: 376px) {
+  @media (min-width: 500px) {
     display: grid;
     background-image: url("assets/images/image-web-3-desktop.jpg");
     height: 300px;
     max-width:729px;
   }
-  @media (min-width: 1400px) {
+
+  @media (min-width: 729px) {
     background-image: url("assets/images/image-web-3-desktop.jpg");
     display: flex;
     max-width: 729px;
