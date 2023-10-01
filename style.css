@@ -261,8 +261,9 @@ grid-column:-1;
     width: 352px;
     /* margin-top: 213px; */
     /* grid-column-start:3; */
-    grid-column:3;
-    justify-self:end;
+    grid-column-start:3;
+    justify-self:start;
+    margin-left:18px;
   }
 }
 .secondSectionBlock {
