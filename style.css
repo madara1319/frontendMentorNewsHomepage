@@ -65,14 +65,11 @@ main {
   display: none;
   @media (min-width: 1400px) {
     display: flex;
-    /* grid-column-end:3 ; */
-grid-column:-1;
+    grid-column:-1;
     grid-auto-flow:revert;
     width:100%;
     text-align:right;
-    /* flex-direction:row; */
     justify-content:space-between;
-    /* justify-items:center; */
     margin-top:89px;
     color: hsl(233, 8%, 79%);
   column-gap:40px;
